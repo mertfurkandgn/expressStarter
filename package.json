@@ -1,0 +1,26 @@
+{
+  "name": "nodestarter",
+  "version": "1.0.0",
+  "description": "express starter folder",
+  "main": "index.js",
+  "type":"modules",
+  
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "starter",
+    "nodejs",
+    "express"
+  ],
+  "author": "mert furkan dogan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "prettier": "^3.6.2"
+  }
+}
