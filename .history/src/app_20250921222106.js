@@ -23,7 +23,11 @@ import healthCheckRouter from './routes/healthcheck.routes.js'
 
 //routes middleware
 
-app.use('/api/v1/healthcheck/',healthCheckRouter);
+app.use('/api/v1/healthcheck/',(req,res,next)=>{
+    console.log('geldi');
+    res.status(200).send('hrllo')
+
+});
 
 app.listen(8000,()=>{
     console.log("app listening")
